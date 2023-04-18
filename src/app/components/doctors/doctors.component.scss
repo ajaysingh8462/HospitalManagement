@@ -1,0 +1,74 @@
+.main-co{
+    display: flex;
+    flex-direction: column;
+   
+    align-items: center;
+    
+}
+
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5%;
+    width: 80%;
+    padding: 50px 50px 0px 10px;
+    
+}
+
+.header{
+    width: 22%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+}
+.doctor{
+    width: 390px;
+    height: 50%;
+    margin-bottom: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    // border: 1px solid black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    gap: 10px;
+
+}
+.images{
+   width: 390px;
+        height: 260px;
+}
+.social{
+    display: flex;
+gap: 10px;
+    
+}
+.img-social{
+    width: 25px;
+    height: 25px;
+}
+.drname{
+    font-size: large;
+    font-weight: bold;
+}
+.text{
+    color: rgb(167, 165, 165);
+}
+.button{
+    width: 140px;
+    height: 40px;
+    border-radius: 5px;
+    border: 0px;
+    outline: 0px;
+    color: white;
+    background-color: rgb(26, 115, 232);
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    
+    align-items: center;
+
+}
