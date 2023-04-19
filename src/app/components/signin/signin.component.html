@@ -6,29 +6,31 @@
         <div class="heder-text">
             login to access your account
         </div><br>
-        <div class="form-container">
-            <div class="input-div">
-                <input class="input-text" type="text" placeholder="Login">
-            </div><br>
-            <div class="input-div">
-                <input class="input-text" type="password" placeholder="*Paassword">
-            </div><br>
+        <form [formGroup]="login">
+            <div class="form-container">
+                <div class="input-div">
+                    <input class="input-text" type="text" placeholder="Login" formControlName="email">
+                </div><br>
+                <div class="input-div">
+                    <input class="input-text" autocomplete="false" type="password" placeholder="*Password" formControlName="password">
+                </div><br>
 
-        </div>
-        <div class=" slide-cont">
-            <div class="slider">
-                <mat-slide-toggle>Remember me</mat-slide-toggle>
             </div>
-            <div class="button-div">
-                <button class="button">
-                    <img class="plus" src="assets/login.png" alt="">
-                    Login
+            <div class=" slide-cont">
+                <div class="slider">
+                    <mat-slide-toggle>Remember me</mat-slide-toggle>
+                </div>
+                <div class="button-div">
+                    <button class="button" (click)="onSubmit()">
+                        <img class="plus" src="assets/login.png" alt="">
+                        Login
 
-                </button>
+                    </button>
+                </div>
+
+
             </div>
-
-
-        </div>
+        </form>
 
         <div class="signin">
             <div class="span-signin" routerLink="">

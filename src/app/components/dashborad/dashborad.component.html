@@ -7,9 +7,10 @@
                     <div class="input-div">
                         <!-- <input class="input-text" type="search" placeholder="Type to search"><mat-icon>search</mat-icon> -->
                         <input class="input-text" matInput placeholder="Type to search">
+
                         <span class="material-symbols-outlined">
                             search
-                        </span> 
+                        </span>
 
                     </div>
                     <div class="user">
@@ -17,10 +18,13 @@
                             <img style="width: 40px;
                         height: 40px;" src="assets/bell-icon-11.png" alt="">
                         </div>
-                        <div>
-                            <img style="width: 40px;
-                        height: 40px;" src="assets/profile.png" alt="">
-                        </div>
+                        <button style="    border: none;
+                        outline: none;
+                        background: transparent;" mat-button [matMenuTriggerFor]="menu"><img style="width: 40px;
+                            height: 40px;" src="assets/profile.png" alt=""></button>
+                        <mat-menu #menu="matMenu">
+                            <button (click)="logout()" mat-menu-item>Log out</button>
+                        </mat-menu>
 
 
 
@@ -34,21 +38,21 @@
                     [fixedInViewport]="mobileQuery.matches" fixedTopGap="56">
                     <mat-nav-list>
                         <!-- <a mat-list-item routerLink="." *ngFor="let nav of fillerNav">{{nav}}</a> -->
-                        <div>
+                        <div class="list">
                             <label for="doctors">Doctores</label>
                         </div>
-                        <div>
+                        <div class="list">
                             <label for="doctors">Appointments</label>
                         </div>
-                        <div>
+                        <div class="list">
                             <label for="doctors">Patients</label>
                         </div>
                     </mat-nav-list>
                 </mat-sidenav>
 
-                <mat-sidenav-content>
+                <mat-sidenav-content >
                     <router-outlet></router-outlet>
-                  </mat-sidenav-content>
+                </mat-sidenav-content>
             </mat-sidenav-container>
         </div>
 
@@ -56,4 +60,3 @@
     </div>
 
 </div>
-

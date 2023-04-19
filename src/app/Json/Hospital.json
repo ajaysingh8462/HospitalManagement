@@ -1,0 +1,22 @@
+{
+  "User": [
+    {
+      "fullName": "ajay singh",
+      "email": "ajay@gmail.com",
+      "password": "qwert",
+      "id": 1
+    },
+    {
+      "fullName": "ajay singh",
+      "email": "ajay1@gmail.com",
+      "password": "QWERT",
+      "id": 2
+    },
+    {
+      "fullName": "ajay",
+      "email": "ajay@gmail.com",
+      "password": "qwertyui",
+      "id": 3
+    }
+  ]
+}

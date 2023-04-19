@@ -41,6 +41,7 @@
     padding-right: 4%;
 }
 
+
 .example-container {
     width: 100%;
     display: flex;
@@ -60,6 +61,11 @@
 
 h1.example-app-name {
     margin-left: 8px;
+}
+:host ::ng-deep .mat-drawer-inner-container {
+    width: 237px;
+    height: 100%;
+
 }
 
 ::ng-deep.mat-toolbar.mat-toolbar.mat-primary {
@@ -94,4 +100,19 @@ h1.example-app-name {
   color:  rgb(133 129 129);
 
 }
-
+.list{
+    width: 90%;
+    height: 40px;
+    padding: 2px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 20px;
+    font-size: larger;
+    color: rgb(80 78 78);
+    font-weight: 500;
+}
+.list:hover{
+    background-color: rgb(174, 160, 160);
+    border-radius: 15px;
+}
