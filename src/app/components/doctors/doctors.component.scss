@@ -1,39 +1,43 @@
-.main-co{
+.main-co {
     display: flex;
     flex-direction: column;
-   
+
     align-items: center;
-    
+
 }
 
-.main{
+.main {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 1.5%;
     width: 100%;
-    
-    
+
+
 }
 
-.header{
-    width: 41%;
-color: rgb(167, 165, 165);
-font-size: xx-large;
-font-weight: 400;
-    display: flex;
-    justify-content: space-between;
-}
-.co{
+.header {
+
+    width: 1224px;
+    color: rgb(167, 165, 165);
+    font-size: xx-large;
+    font-weight: 400;
     display: flex;
     justify-content: flex-start;
-    flex-direction: row;
+}
+
+.co {
+    display: flex;
+    justify-content: center;
+    // flex-direction: row;
     padding-top: 30px;
     padding-bottom: 30px;
-    padding-left: 3%;
+    // padding-left: 3%;
+    align-items: center;
 }
-.doctor{
+
+.doctor {
     width: 390px;
     height: 45%;
     margin-bottom: 3%;
@@ -46,30 +50,37 @@ font-weight: 400;
     gap: 10px;
 
 }
-.images{
-   width: 390px;
-        height: 260px;
+
+.images {
+    width: 390px;
+    height: 260px;
 }
-.social{
+
+.social {
     display: flex;
-gap: 10px;
-    
+    gap: 10px;
+
 }
-.img-social{
+
+.img-social {
     width: 25px;
     height: 25px;
 }
-.drname{
+
+.drname {
     font-size: large;
     font-weight: bold;
 }
-.text{
+
+.text {
     color: rgb(167, 165, 165);
 }
-.button-div{
+
+.button-div {
     padding-top: 20px;
 }
-.button{
+
+.button {
     width: 140px;
     height: 40px;
     border-radius: 5px;
@@ -80,7 +91,7 @@ gap: 10px;
     font-weight: bolder;
     display: flex;
     justify-content: center;
-    
+
     align-items: center;
 
 }

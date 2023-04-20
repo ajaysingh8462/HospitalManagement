@@ -3,41 +3,44 @@
         <div class="Heder">
             Add appointment
         </div>
-        <div class="form-container">
-            <div class="input-div">
-                <input class="input-text" type="text" placeholder="Name">
+        <form [formGroup]="appointment">
+            <div class="form-container">
+                <div class="input-div">
+                    <input class="input-text" type="text" placeholder="Name" [(ngModel)]="name" formControlName="name">
 
-            </div><br>
-            <div class="input-div">
-                <input class="input-text" type="text" placeholder="Doctor">
-            </div><br>
-            <div class="input-div">
-                <input class="input-text" type="email" placeholder="Email">
-            </div><br>
-            <div class="input-div">
-                <input class="input-text" type="date" placeholder="Date">
-            </div><br>
-            <div class="input-dive">
-                <input class="input-text" type="time" placeholder="From">
-                <input class="input-text" type="time" placeholder="To">
-            </div><br>
-            <div class="input-div">
-                <input class="input-text" type="tel" placeholder="Number">
-            </div><br>
-            <div class="input-div">
-                <input class="input-text" type="text" placeholder="Injury">
-            </div><br>
+                </div><br>
+                <div class="input-div">
+                    <input class="input-text" type="text" placeholder="Doctor" [(ngModel)]="drName" formControlName="drName">
+                </div><br>
+                <div class="input-div">
+                    <input class="input-text" type="email" placeholder="Email" [(ngModel)]="email" formControlName="email">
+                </div><br>
+
+                <div class="input-div">
+                    <input class="input-text" type="date" placeholder="Date" formControlName="Date">
+                </div><br>
+                <div class="input-dive">
+                    <input class="input-text" type="time" placeholder="From" formControlName="From">
+                    <input class="input-text" type="time" placeholder="To" formControlName="To">
+                </div><br>
+                <div class="input-div">
+                    <input class="input-text" type="tel" placeholder="Number" formControlName="Number">
+                </div><br>
+                <div class="input-div">
+                    <input class="input-text" type="text" placeholder="Injury" formControlName="Injury">
+                </div><br>
 
 
-        </div>
+            </div>
+        </form>
 
         <div class="button-div">
-            <button class="Cancle">
+            <button class="Cancle" (click)="Cancle()">
                 Cancle
 
             </button>
-            <button class="button">
-               Add appointment
+            <button class="button" (click)=" onSubmit()">
+                Add appointment
 
             </button>
         </div>
@@ -46,4 +49,3 @@
 
 
 </div>
-

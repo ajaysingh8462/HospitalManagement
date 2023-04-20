@@ -20,4 +20,17 @@ export class UserService {
    
     return this.httpservices.getServices('User')
   }
+  getDoctors() {
+ 
+   
+    return this.httpservices.getServices('Doctors')
+  }
+  getuser(id:any) {
+ 
+   
+    return this.httpservices.getServices('User/'+id)
+  }
+  addAppointment(reqdata:any){
+    return this.httpservices.postServices('Appointment', reqdata)
+  }
 }

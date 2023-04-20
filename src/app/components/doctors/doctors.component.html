@@ -1,21 +1,19 @@
-
+<div class="co">
+    <div class="header">
+        <div>DOCTORS</div>
+    </div>
+    </div>
 <div class="main-co">
-    <div class="co">
-        <div class="header">
-            <div>DOCTORS</div>
-            
-        
-        </div>
-        </div>
-    <div class="main">
+   
+    <div class="main" >
 
-        <div class="doctor">
-            <img class="images" src="assets/lisa-chavez.jpg" alt=""><br>
+        <div class="doctor" *ngFor="let doctor of doctorsDeatils ">
+            <img class="images" src="{{doctor.image}}" alt=""><br>
             <div>
-                <label class="drname" for="">Dr. priyanshi</label>
+                <label class="drname" for="">{{doctor.drName}}</label>
             </div>
             <div>
-                <p class="text">Gynecologist</p>
+                <p class="text">{{doctor.profession}}</p>
             </div>
             <div class="social">
                 <img class="img-social" src="assets/instagram.png" alt="">
@@ -26,133 +24,14 @@
                759 Falcon Ave, Suite 600 San Fransisco, CADGE 94107
             </div>
             <div class="button-div">
-                <button class="button" (click)="openDialog()" >
+                <button class="button" (click)="openDialog(doctor)" >
                     Add Appointment
                 </button><br>
             </div><br>
 
 
         </div>
-        <div class="doctor">
-            <img class="images" src="assets/kevin-hart.jpg" alt=""><br>
-            <div>
-                <label class="drname" for="">Dr. Lie</label>
-            </div>
-            <div>
-                <p class="text">Dentist</p>
-            </div>
-            <div class="social">
-                <img class="img-social" src="assets/instagram.png" alt="">
-                <img class="img-social" src="assets/facebook.png" alt="">
-                <img class="img-social" src="assets/twitter.png" alt="">
-            </div>
-            <div class="text">
-                759 Falcon Ave, Suite 600 San Fransisco, CADGE 94107
-            </div>
-            <div class="button-div">
-                <button class="button" (click)="openDialog()" >
-                    Add Appointment
-                </button><br>
-            </div><br>
-
-
-        </div>
-        <div class="doctor">
-            <img class="images" src="assets/austin-distel.jpg" alt=""><br>
-            <div>
-                <label class="drname" for="">Dr. Piyush</label>
-            </div>
-            <div>
-                <p class="text">Naturopath</p>
-            </div>
-            <div class="social">
-                <img class="img-social" src="assets/instagram.png" alt="">
-                <img class="img-social" src="assets/facebook.png" alt="">
-                <img class="img-social" src="assets/twitter.png" alt="">
-            </div>
-            <div class="text">
-                759 Falcon Ave, Suite 600 San Fransisco, CADGE 94107
-            </div>
-            <div class="button-div">
-                <button class="button" (click)="openDialog()">
-                    Add Appointment
-                </button><br>
-            </div><br>
-
-
-        </div>
-        <div class="doctor">
-            <img class="images" src="../../../assets/santosh-daruwala.jpg" alt=""><br>
-            <div>
-                <label class="drname" for="">Dr. Arun</label>
-            </div>
-            <div>
-                <p class="text">Chiropractor</p>
-            </div>
-            <div class="social">
-                <img class="img-social" src="assets/instagram.png" alt="">
-                <img class="img-social" src="assets/facebook.png" alt="">
-                <img class="img-social" src="assets/twitter.png" alt="">
-            </div>
-            <div class="text">
-                759 Falcon Ave, Suite 600 San Fransisco, CADGE 94107
-            </div>
-            <div class="button-div">
-                <button class="button" (click)="openDialog()">
-                    Add Appointment
-                </button><br>
-            </div><br>
-
-
-        </div>
-        <div class="doctor">
-            <img class="images" src="../../../assets/aaron-keener.jpg" alt=""><br>
-            <div>
-                <label class="drname" for="">Dr. Praveen</label>
-            </div>
-            <div>
-                <p class="text">Dermatologist</p>
-            </div>
-            <div class="social">
-                <img class="img-social" src="assets/instagram.png" alt="">
-                <img class="img-social" src="assets/facebook.png" alt="">
-                <img class="img-social" src="assets/twitter.png" alt="">
-            </div>
-            <div class="text">
-                759 Falcon Ave, Suite 600 San Fransisco, CADGE 94107
-            </div>
-            <div class="button-div">
-                <button class="button" (click)="openDialog()" >
-                    Add Appointment
-                </button><br>
-            </div><br>
-
-
-        </div>
-        <div class="doctor">
-            <img class="images" src="../../../assets/usman-yousaf.jpg" alt=""><br>
-            <div>
-                <label class="drname" for="">Dr. Jhon</label>
-            </div>
-            <div>
-                <p class="text">Psychiatrist</p>
-            </div>
-            <div class="social">
-                <img class="img-social" src="assets/instagram.png" alt="">
-                <img class="img-social" src="assets/facebook.png" alt="">
-                <img class="img-social" src="assets/twitter.png" alt="">
-            </div>
-            <div class="text">
-                759 Falcon Ave, Suite 600 San Fransisco, CADGE 94107
-            </div>
-            <div class="button-div">
-                <button class="button" (click)="openDialog()" >
-                    Add Appointment
-                </button><br>
-            </div><br>
-
-
-        </div>
+      
 
 
 

@@ -44,14 +44,14 @@ export class SignupComponent implements OnInit {
         this.router.navigate(['/signin'])
         this._snackBar.open("you are logged in", "ok", {
           duration: 3000,
+          verticalPosition: 'bottom',
+          horizontalPosition: 'center'
 
         });
 
       });
     }
 
-    // display form values on success
-    // alert('SUCCESS!! :-)\n\n' + JSON.stringify(this.registerForm.value, null, 4));
   }
 
 }

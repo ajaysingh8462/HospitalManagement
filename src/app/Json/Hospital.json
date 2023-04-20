@@ -18,5 +18,67 @@
       "password": "qwertyui",
       "id": 3
     }
+  ],
+  "Doctors": [
+    {
+      "drName": "Dr. priyanshi",
+      "profession": "Gynecologist",
+      "image": "../../../assets/lisa-chavez.jpg",
+      "id": 1
+    },
+    {
+      "drName": "Dr. Lie",
+      "profession": "Dentist",
+      "image": "../../../assets/kevin-hart.jpg",
+      "id": 2
+    },
+    {
+      "drName": "Dr. Piyush",
+      "profession": "Naturopath",
+      "image": "../../../assets/austin-distel.jpg",
+      "id": 3
+    },
+    {
+      "drName": "Dr. Arun",
+      "profession": "Chiropractor",
+      "image": "../../../assets/santosh-daruwala.jpg",
+      "id": 4
+    },
+    {
+      "drName": "Dr. Praveen",
+      "profession": "Dermatologist",
+      "image": "../../../assets/aaron-keener.jpg",
+      "id": 5
+    },
+    {
+      "drName": "Dr. Jhon",
+      "profession": "Psychiatrist",
+      "image": "../../../assets/usman-yousaf.jpg",
+      "id": 6
+    }
+  ],
+  "Appointment": [
+    {
+      "fname": "ajay",
+      "drName": "Dr. Lie",
+      "email": "ajay@gmail.com",
+      "Date": "2023-04-21",
+      "From": "13:15",
+      "To": "15:00",
+      "Number": "7898546235",
+      "Injury": "Cavitie",
+      "id": 2
+    },
+    {
+      "fname": "ajay",
+      "drName": "Dr. priyanshi",
+      "email": "ajay@gmail.com",
+      "Date": "2023-04-21",
+      "From": "12:12",
+      "To": "13:13",
+      "Number": "9897487844",
+      "Injury": "knefefcdd",
+      "id": 3
+    }
   ]
 }
