@@ -33,4 +33,17 @@ export class UserService {
   addAppointment(reqdata:any){
     return this.httpservices.postServices('Appointment', reqdata)
   }
+  getAppointment() {
+ 
+   
+    return this.httpservices.getServices('Appointment')
+  }
+  deleteAppointment(id:any) {
+ 
+   
+    return this.httpservices.deleteService('Appointment/'+id)
+  }
+  addPatient(reqdata:any){
+    return this.httpservices.postServices('Patients', reqdata)
+  }
 }

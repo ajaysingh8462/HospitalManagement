@@ -1,22 +1,16 @@
 {
   "User": [
     {
-      "fullName": "ajay singh",
-      "email": "ajay@gmail.com",
-      "password": "qwert",
-      "id": 1
-    },
-    {
-      "fullName": "ajay singh",
-      "email": "ajay1@gmail.com",
-      "password": "QWERT",
-      "id": 2
-    },
-    {
       "fullName": "ajay",
       "email": "ajay@gmail.com",
       "password": "qwertyui",
       "id": 3
+    },
+    {
+      "fullName": "madhu sudhan",
+      "email": "madhu@gmail.com",
+      "password": "qwertyu",
+      "id": 4
     }
   ],
   "Doctors": [
@@ -59,26 +53,34 @@
   ],
   "Appointment": [
     {
-      "fname": "ajay",
-      "drName": "Dr. Lie",
-      "email": "ajay@gmail.com",
-      "Date": "2023-04-21",
-      "From": "13:15",
-      "To": "15:00",
-      "Number": "7898546235",
-      "Injury": "Cavitie",
-      "id": 2
-    },
-    {
-      "fname": "ajay",
+      "Profile": "../../../assets/icon/Profile-Pic-2.png",
+      "fname": "madhu sudhan",
       "drName": "Dr. priyanshi",
-      "email": "ajay@gmail.com",
-      "Date": "2023-04-21",
-      "From": "12:12",
-      "To": "13:13",
-      "Number": "9897487844",
-      "Injury": "knefefcdd",
-      "id": 3
+      "email": "madhu@gmail.com",
+      "Date": "2023-04-22",
+      "From": "12:30",
+      "To": "13:31",
+      "Number": "7898564503",
+      "Injury": "pain",
+      "age": "25",
+      "address": "mumbai",
+      "id": 1
+    }
+  ],
+  "Patients": [
+    {
+      "Profile": "../../../assets/icon/Profile-Pic-2.png",
+      "fname": "madhu sudhan",
+      "drName": "Dr. priyanshi",
+      "email": "madhu@gmail.com",
+      "Date": "2023-04-22",
+      "From": "12:30",
+      "To": "13:31",
+      "Number": "7898564503",
+      "Injury": "pain",
+      "age": "25",
+      "address": "mumbai",
+      "id": 1
     }
   ]
 }

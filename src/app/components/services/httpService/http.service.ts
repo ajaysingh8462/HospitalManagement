@@ -16,4 +16,8 @@ export class HttpService {
   {return this.httpclient.get(this.baseurl+url)
   
   }
+  deleteService(url:string)
+  {return this.httpclient.delete(this.baseurl+url)
+  
+  }
 }

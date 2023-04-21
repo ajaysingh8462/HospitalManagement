@@ -5,15 +5,26 @@
         </div>
         <form [formGroup]="appointment">
             <div class="form-container">
+                <div class="img-div">
+                    <img class="img" src="{{image}}" alt="profile">
+                    <button class="size" mat-button [matMenuTriggerFor]="menu">Select image <img style="width: 18px; height: 18px;" src="../../../assets/user.png" alt=""></button>
+                    <mat-menu #menu="matMenu" >
+                        <button (click)="image1()" mat-menu-item><img src="../../../assets/icon/Profile-Pic-1.png"></button>
+                        <button (click)="image2()"mat-menu-item><img src="../../../assets/icon/Profile-Pic-2.png"></button>
+                        <button (click)="image3()" mat-menu-item><img src="../../../assets/icon/Profile-Pic-3.png"></button>
+                        <button (click)="image4()" mat-menu-item><img src="../../../assets/icon/Profile-Pic-4.png"></button>
+                    </mat-menu>
+                </div>
                 <div class="input-div">
-                    <input class="input-text" type="text" placeholder="Name" [(ngModel)]="name" formControlName="name">
+                    <input class="input-text" type="text" placeholder="Name" value="{{name}}" formControlName="name" >
 
                 </div><br>
                 <div class="input-div">
-                    <input class="input-text" type="text" placeholder="Doctor" [(ngModel)]="drName" formControlName="drName">
+                    <input class="input-text" type="text" placeholder="Doctor" value="{{drName}}" disabled >
                 </div><br>
                 <div class="input-div">
-                    <input class="input-text" type="email" placeholder="Email" [(ngModel)]="email" formControlName="email">
+                    <input class="input-text" type="email" placeholder="Email" value="{{email}}" disabled
+                     >
                 </div><br>
 
                 <div class="input-div">
@@ -29,8 +40,12 @@
                 <div class="input-div">
                     <input class="input-text" type="text" placeholder="Injury" formControlName="Injury">
                 </div><br>
-
-
+                <div class="input-div">
+                    <input class="input-text" type="text" placeholder="age" formControlName="age">
+                </div><br>
+                <div class="input-div">
+                    <input class="input-text" type="text" placeholder="address" formControlName="address">
+                </div><br>
             </div>
         </form>
 
@@ -39,7 +54,7 @@
                 Cancle
 
             </button>
-            <button class="button" (click)=" onSubmit()">
+            <button class="button" (click)="onSubmit()">
                 Add appointment
 
             </button>

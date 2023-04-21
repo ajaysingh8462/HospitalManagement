@@ -22,6 +22,9 @@ import { HttpClientModule } from '@angular/common/http';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import { AuthguardService } from './components/authguard/authguard.service';
 import {MatMenuModule} from '@angular/material/menu';
+import { AppointmentListComponent } from './components/appointment-list/appointment-list.component';
+import { AppointmentlistComponent } from './components/appointmentlist/appointmentlist.component';
+import {MatTableModule} from '@angular/material/table';
 
 
 @NgModule({
@@ -31,7 +34,9 @@ import {MatMenuModule} from '@angular/material/menu';
     SigninComponent,
     DoctorsComponent,
     DashboradComponent,
-    AppointmentComponent
+    AppointmentComponent,
+    AppointmentListComponent,
+    AppointmentlistComponent
     
   ],
   imports: [
@@ -49,7 +54,8 @@ import {MatMenuModule} from '@angular/material/menu';
     MatInputModule,
     HttpClientModule,
     MatSnackBarModule,
-    MatMenuModule
+    MatMenuModule,
+    MatTableModule
     
     
   ],

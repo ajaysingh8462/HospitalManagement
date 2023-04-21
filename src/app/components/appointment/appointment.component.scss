@@ -7,8 +7,7 @@
 }
 .container{
     width: 100%;
-   
-    height: 580px;
+
 
 }
 // .image{
@@ -21,8 +20,8 @@
     font-weight: bolder;
     font-family: sans-serif;
     padding-left: 34px;
-    padding-bottom: 20px;
-    padding-top: 20px;
+    padding-bottom: 10px;
+  
 
 }
 .form-container{
@@ -30,6 +29,8 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    height: 40%;
+    
 }
 .input-div{
     width: 100%;
@@ -62,6 +63,7 @@
     justify-content: space-between;
     padding-left: 34px;
     padding-right: 32px;
+    padding-bottom: 5PX;
 
 }
 
@@ -97,4 +99,37 @@
     gap: 10px;
     align-items: center;
 
+}
+.img{
+    width: 40px;
+    height: 40px;
+}
+.img-div{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 7%;
+    padding-left: -61px;
+    padding-right: 189px;
+    padding-bottom: 15px;
+}
+.size{
+    width: 170px;
+    height: 40px;
+    background: rgb(26,115,232);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 13%;
+    border: none;
+    border-radius: 5px;
+    font-size: larger;
+    font-weight: 400;
+    font-family: 'Roboto';
+    color: white;
+}
+::ng-deep.mat-mdc-menu-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

@@ -19,7 +19,7 @@
 
 .header {
 
-    width: 1224px;
+    // width: 1224px;
     color: rgb(167, 165, 165);
     font-size: xx-large;
     font-weight: 400;
@@ -29,12 +29,13 @@
 
 .co {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     // flex-direction: row;
     padding-top: 30px;
     padding-bottom: 30px;
-    // padding-left: 3%;
+    padding-left: 3%;
     align-items: center;
+    // padding: 40px;
 }
 
 .doctor {

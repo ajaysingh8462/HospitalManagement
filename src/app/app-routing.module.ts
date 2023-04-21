@@ -6,14 +6,18 @@ import { DashboradComponent } from './components/dashborad/dashborad.component';
 import { DoctorsComponent } from './components/doctors/doctors.component';
 import { AppointmentComponent } from './components/appointment/appointment.component';
 import { AuthguardGuard } from './components/authguard/authguard.guard';
+import { AppointmentListComponent } from './components/appointment-list/appointment-list.component';
 
 const routes: Routes = [ 
   {path:'', redirectTo:'signin',pathMatch: 'full'},
   {path: 'signup',component: SignupComponent},
   {path: 'signin',component: SigninComponent},
   {path:'dashboard',component:DashboradComponent,canActivate:[AuthguardGuard]}, 
-  {path:'dashboard',canActivate:[AuthguardGuard],component:DashboradComponent,children:[{path:'doctors',component:DoctorsComponent}]},
-  
+  {path:'dashboard',canActivate:[AuthguardGuard],component:DashboradComponent,children:[
+    {path:'doctors',component:DoctorsComponent},
+    {path:'appointmentlist',component:AppointmentListComponent}
+  ]},
+ 
  
  
 ];
