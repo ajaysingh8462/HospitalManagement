@@ -6,7 +6,7 @@
                 <div class="container">
                     <div class="input-div">
                         <!-- <input class="input-text" type="search" placeholder="Type to search"><mat-icon>search</mat-icon> -->
-                        <input class="input-text" matInput placeholder="Type to search">
+                        <input (keyup)="search($event)"  class="input-text" matInput placeholder="Type to search">
 
                         <span class="material-symbols-outlined">
                             search
@@ -44,8 +44,8 @@
                         <div class="list">
                             <label for="doctors" routerLink="/dashboard/appointmentlist">Appointments</label>
                         </div>
-                        <div class="list">
-                            <label for="doctors">Patients</label>
+                        <div class="list" *ngIf="edited==true" >
+                            <label for="doctors" routerLink="/dashboard/patient">Patients</label>
                         </div>
                     </mat-nav-list>
                 </mat-sidenav>

@@ -64,6 +64,13 @@
     
 
 }
+.cont{
+    display: flex;
+    justify-content: flex-start;
+    padding:10px;
+    // padding-left: 30px;
+    gap: 10px;
+}
 .plus{
     // margin-right: 40px;
     font-weight: bolder;

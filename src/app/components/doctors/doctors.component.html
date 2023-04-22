@@ -7,7 +7,7 @@
    
     <div class="main" >
 
-        <div class="doctor" *ngFor="let doctor of doctorsDeatils ">
+        <div class="doctor" *ngFor="let doctor of doctorsDeatils | search : textSearch ">
             <img class="images" src="{{doctor.image}}" alt=""><br>
             <div>
                 <label class="drname" for="">{{doctor.drName}}</label>

@@ -1,5 +1,6 @@
 import { Component,  OnInit,} from '@angular/core';
 import { UserService } from '../services/userService/user.service';
+import { DataService } from '../services/data/data.service';
 export interface PeriodicElement {
   name: string;
   position: number;
@@ -14,17 +15,30 @@ export interface PeriodicElement {
 })
 export class AppointmentListComponent implements OnInit {
 
- 
+  patient:any
+  textSearch:any
 
-  constructor(private user:UserService){}
+  constructor(private user:UserService,private data:DataService){}
   displayedColumns: string[] = ['Photo', 'Name', 'Email', 'Date','Visit','Number','Doctor','Injury','Action'];
   dataSource:any
   
 
 
   ngOnInit() {
+    this.data.newMassage.subscribe((massage)=>{this.textSearch=massage})
+    console.log(this.textSearch);
+
+
+    
+    const userid = localStorage.getItem("id");
+    this.user.getuser(userid).subscribe((response: any) => {
+      this.patient = response;
+    });
     this.user.getAppointment().subscribe((response: any) => {
-      this.dataSource=response;
+      this.dataSource = response?.filter((obj: any) => {
+        return obj.email == this.patient.email 
+      });
+      console.log(this.dataSource);
       
     });
     

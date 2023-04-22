@@ -18,36 +18,48 @@
       "drName": "Dr. priyanshi",
       "profession": "Gynecologist",
       "image": "../../../assets/lisa-chavez.jpg",
+      "email": "priyanshi@gmail.com",
+      "password": "qwertyu",
       "id": 1
     },
     {
       "drName": "Dr. Lie",
       "profession": "Dentist",
       "image": "../../../assets/kevin-hart.jpg",
+      "email": "Lie@gmail.com",
+      "password": "qwertyu",
       "id": 2
     },
     {
       "drName": "Dr. Piyush",
       "profession": "Naturopath",
       "image": "../../../assets/austin-distel.jpg",
+      "email": "Piyush@gmail.com",
+      "password": "qwertyu",
       "id": 3
     },
     {
       "drName": "Dr. Arun",
       "profession": "Chiropractor",
       "image": "../../../assets/santosh-daruwala.jpg",
+      "email": "Arun@gmail.com",
+      "password": "qwertyu",
       "id": 4
     },
     {
       "drName": "Dr. Praveen",
       "profession": "Dermatologist",
       "image": "../../../assets/aaron-keener.jpg",
+      "email": "Praveen@gmail.com",
+      "password": "qwertyu",
       "id": 5
     },
     {
       "drName": "Dr. Jhon",
       "profession": "Psychiatrist",
       "image": "../../../assets/usman-yousaf.jpg",
+      "email": "Jhon@gmail.com",
+      "password": "qwertyu",
       "id": 6
     }
   ],
@@ -65,6 +77,48 @@
       "age": "25",
       "address": "mumbai",
       "id": 1
+    },
+    {
+      "Profile": "../../../assets/icon/Profile-Pic-2.png",
+      "fname": "ajay",
+      "drName": "Dr. priyanshi",
+      "email": "ajay@gmail.com",
+      "Date": "2023-04-22",
+      "From": "14:15",
+      "To": "15:16",
+      "Number": "789856234",
+      "Injury": "uegyvdw",
+      "age": "23",
+      "address": "near railway station navi mumbai",
+      "id": 2
+    },
+    {
+      "Profile": "../../../assets/icon/Profile-Pic-2.png",
+      "fname": "ajay",
+      "drName": "Dr. priyanshi",
+      "email": "ajay@gmail.com",
+      "Date": "2023-04-22",
+      "From": "14:42",
+      "To": "15:41",
+      "Number": "7898562345",
+      "Injury": "pain",
+      "age": "23",
+      "address": "mumbai",
+      "id": 3
+    },
+    {
+      "Profile": "../../../assets/icon/Profile-Pic-4.png",
+      "fname": "raj",
+      "drName": "Dr. Lie",
+      "email": "ajay@gmail.com",
+      "Date": "2023-04-24",
+      "From": "09:59",
+      "To": "11:01",
+      "Number": "7898564230",
+      "Injury": "sdsd",
+      "age": "23",
+      "address": "hudbhbsidbwd",
+      "id": 4
     }
   ],
   "Patients": [
@@ -81,6 +135,48 @@
       "age": "25",
       "address": "mumbai",
       "id": 1
+    },
+    {
+      "Profile": "../../../assets/icon/Profile-Pic-2.png",
+      "fname": "ajay",
+      "drName": "Dr. priyanshi",
+      "email": "ajay@gmail.com",
+      "Date": "2023-04-22",
+      "From": "14:15",
+      "To": "15:16",
+      "Number": "789856234",
+      "Injury": "uegyvdw",
+      "age": "23",
+      "address": "near railway station navi mumbai",
+      "id": 2
+    },
+    {
+      "Profile": "../../../assets/icon/Profile-Pic-2.png",
+      "fname": "ajay",
+      "drName": "Dr. priyanshi",
+      "email": "ajay@gmail.com",
+      "Date": "2023-04-22",
+      "From": "14:42",
+      "To": "15:41",
+      "Number": "7898562345",
+      "Injury": "pain",
+      "age": "23",
+      "address": "mumbai",
+      "id": 3
+    },
+    {
+      "Profile": "../../../assets/icon/Profile-Pic-4.png",
+      "fname": "raj",
+      "drName": "Dr. Lie",
+      "email": "ajay@gmail.com",
+      "Date": "2023-04-24",
+      "From": "09:59",
+      "To": "11:01",
+      "Number": "7898564230",
+      "Injury": "sdsd",
+      "age": "23",
+      "address": "hudbhbsidbwd",
+      "id": 4
     }
   ]
 }

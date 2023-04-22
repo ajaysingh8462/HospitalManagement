@@ -20,6 +20,11 @@ export class UserService {
    
     return this.httpservices.getServices('User')
   }
+  drLogin() {
+ 
+   
+    return this.httpservices.getServices('Doctors')
+  }
   getDoctors() {
  
    

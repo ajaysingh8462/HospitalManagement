@@ -46,6 +46,7 @@ export class AppointmentComponent implements OnInit {
       this.email = this.patient.email;
 
     });
+    
     this.appointment = this.formBuilder.group({
       name:['', Validators.required],
       Date: ['', Validators.required],

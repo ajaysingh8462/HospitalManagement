@@ -16,10 +16,18 @@
                 </div><br>
 
             </div>
+        </form>
             <div class=" slide-cont">
+                <div class="cont">
                 <div class="slider">
                     <mat-slide-toggle>Remember me</mat-slide-toggle>
                 </div>
+                <div class="slider">
+                    <mat-slide-toggle  
+                    (change)="slideToggleChange($event)"
+                    [(ngModel)]="checked">Your a Doctor?</mat-slide-toggle>
+                </div>
+            </div>
                 <div class="button-div">
                     <button class="button" (click)="onSubmit()">
                         <img class="plus" src="assets/login.png" alt="">
@@ -30,7 +38,7 @@
 
 
             </div>
-        </form>
+        
 
         <div class="signin">
             <div class="span-signin" routerLink="">

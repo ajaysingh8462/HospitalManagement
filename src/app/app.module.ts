@@ -23,8 +23,9 @@ import {MatSnackBarModule} from '@angular/material/snack-bar';
 import { AuthguardService } from './components/authguard/authguard.service';
 import {MatMenuModule} from '@angular/material/menu';
 import { AppointmentListComponent } from './components/appointment-list/appointment-list.component';
-import { AppointmentlistComponent } from './components/appointmentlist/appointmentlist.component';
 import {MatTableModule} from '@angular/material/table';
+import { PatientComponent } from './components/patient/patient.component';
+import { SearchPipe } from './components/services/pipe/search.pipe';
 
 
 @NgModule({
@@ -36,8 +37,9 @@ import {MatTableModule} from '@angular/material/table';
     DashboradComponent,
     AppointmentComponent,
     AppointmentListComponent,
-    AppointmentlistComponent
-    
+    PatientComponent,
+    SearchPipe,
+
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,64 @@
+<div class="co">
+    <div class="header">
+        <div>Patient</div>
+    </div>
+    </div>
+  <div class="page">
+  <div class="main" >
+  <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+  
+      <!--- Note that these columns can be defined in any order.
+            The actual rendered columns are set as a property on the row definition" -->
+    
+      <!-- Position Column -->
+      <ng-container matColumnDef="Photo">
+        <th mat-header-cell *matHeaderCellDef>Photo</th>
+        <td mat-cell *matCellDef="let element"> <img src="{{element.Profile}} " alt=""> </td>
+      </ng-container>
+    
+      <!-- Name Column -->
+      <ng-container matColumnDef="Name">
+        <th mat-header-cell *matHeaderCellDef> Name </th>
+        <td mat-cell *matCellDef="let element"> {{element.fname}} </td>
+      </ng-container>
+    
+      <!-- Weight Column -->
+      <ng-container matColumnDef="Id">
+        <th mat-header-cell *matHeaderCellDef> ID</th>
+        <td mat-cell *matCellDef="let element"> {{element.id}} </td>
+      </ng-container>
+    
+      <!-- Symbol Column -->
+      <ng-container matColumnDef="Age">
+        <th mat-header-cell *matHeaderCellDef> Age </th>
+        <td mat-cell *matCellDef="let element"> {{element.age}} </td>
+      </ng-container>
+      <ng-container matColumnDef="address">
+          <th mat-header-cell *matHeaderCellDef> Address</th>
+          <td mat-cell *matCellDef="let element">{{element.address}}</td>
+        </ng-container>
+        <ng-container matColumnDef="Number">
+          <th mat-header-cell *matHeaderCellDef> Number </th>
+          <td mat-cell *matCellDef="let element"><img class="size" src="../../../assets/smartphone.png" alt="">{{element.Number}} </td>
+        </ng-container>
+        <ng-container matColumnDef="LastVisit">
+          <th mat-header-cell *matHeaderCellDef> LastVisit </th>
+          <td mat-cell *matCellDef="let element"> </td>
+        </ng-container>
+        <ng-container matColumnDef="Status">
+          <th mat-header-cell *matHeaderCellDef>Status</th>
+          <td mat-cell *matCellDef="let element"></td>
+        </ng-container>
+        <ng-container  matColumnDef="Action">
+          <th mat-header-cell *matHeaderCellDef> Action </th>
+          <td mat-cell *matCellDef="let element"><button class="button"><img  src="../../../assets/edit.png" alt=""> </button> 
+            <button class="button" (click)="deleteApp(element.id)" > <img src="../../../assets/bin.png" alt=""></button> </td>
+        </ng-container>
+    
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+  </div>
+  </div>
+  
+  
